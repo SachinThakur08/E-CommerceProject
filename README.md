@@ -20,14 +20,18 @@ This project is designed to manage book information, providing functionalities t
   - Book ISBN
   - Book Name
   - Book Author
+  - **Flash Message:** "New book added successfully"
 - **View Books:**
   - Display the list of added books.
 - **Edit Book:**
   - Modify book details based on ISBN.
+  - **Flash Message:** "Book updated successfully"
 - **Delete Book:**
   - Remove book information based on ISBN.
+  - **Flash Message:** "Book deleted successfully"
 - **Validation:**
   - Duplicate ISBN entries are not allowed.
+  - **Flash Message:** "Duplicate ISBN not allowed"
 
 ## 🏗️ Architecture
 
@@ -39,6 +43,28 @@ The project follows a layered architecture, ensuring a clear separation of conce
 - **Exception Layer:** Manages and processes exceptions.
 - **Model Layer:** Represents the data structure.
 - **Repository Layer:** Manages data persistence and retrieval.
+
+## Project Explanation
+
+### Overview
+This product management system is a backend application built with Spring Boot MVC, designed to manage book information efficiently. It allows users to perform CRUD (Create, Read, Update, Delete) operations on book records.
+
+### Adding Books
+Users can add new books by providing the book's ISBN, name, and author. The system ensures that each ISBN is unique to maintain data integrity. A flash message "New book added successfully" confirms the action.
+
+### Viewing Books
+Users can view a list of all books added to the system. This feature helps in keeping track of the book inventory.
+
+### Editing Books
+If there is a need to update the details of a book, users can do so by editing the book information based on the ISBN. This ensures that updates are accurately applied to the correct book. A flash message "Book updated successfully" confirms the action.
+
+### Deleting Books
+Users can remove a book from the system by deleting the book information based on the ISBN. This feature helps in maintaining an up-to-date record of available books. A flash message "Book deleted successfully" confirms the action.
+
+### Validation
+The system includes validation mechanisms to prevent duplicate ISBN entries, ensuring that each book in the database has a unique identifier. A flash message "Duplicate ISBN not allowed" indicates when a duplicate ISBN entry is attempted.
+
+
 
 ## 📂 Project Structure
 
@@ -97,3 +123,8 @@ Spring-MVC-Project-OracleDB/
                 └── boot/
                     └── project/
                         └── SpringMvcProjectApplicationTests.java
+
+
+
+
+
